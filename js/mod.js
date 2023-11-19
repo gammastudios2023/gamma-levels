@@ -1,31 +1,27 @@
 const mod = {
-    primaryName: "ω",
-    secondaryName: "Engine",
+    primaryName: "Ւ - ",
+    secondaryName: "Ն Յ Մ Յ Ն Տ",
     version: "1.0.0",
     engineVer: "1.0.0 P1", //DO NOT MODIFY
     debugMode: false,
     Infinities: [new Decimal(2).pow(1024), new Decimal("1.8e30008"), new Decimal("1.8e300000008"), new Decimal("ee38")],
     themes: [
         ["Dark", "css/themes/dark.css"],
-        ["Dark Alt (by Jeehan2561)", "css/themes/darkalt.css"],
-        ["Light", "css/themes/light.css"],
         ["Neon", "css/themes/neon.css"],
-        ["Godot Blue", "css/themes/darkblue.css"],
-        ["Halloween", "css/themes/spooky.css"],
         ["eXPerience", "css/themes/experience.css"]
     ],
     layerNames: [
-        ["Greek",
+        ["Omega-Layers",
         [
             "αβγδεζηθικλμνξοπρστυφχψωΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ",
             "ψϝϛͱϻϙͳϸ",
             ["<span class='flipped-v'>Ω</span>", "<span class='flipped-v'>Ω</span><sup>2</sup>","<span class='flipped-v'>Ω</span><sup>3</sup>","<span class='flipped-v'>Ω</span><sup>2<sup>2</sup></sup>"]
         ]],
-        ["Latin",
+        ["Gamma-Levels",
         [
-            "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
-            "ðþȝƿəŋſÐÞȜǷƏŊ",
-            "æœĳǉ"
+            "աբգդեզէըթժիլխծկհձղճմյշոպջռսվտրցւփքօֆԱԲԳԴԵԶԷԸԹԺԻԼԽԾԿՀՁՂՃՄՅՆՇՈՉՊՋՌՎՏՐՑՒՓՔՕՖ",
+            "ႠႡႢႣႤႥႦႧ",
+            ["<span class='flipped-v'>Ֆ</span>", "<span class='flipped-v'>Ֆ</span><sup>2</sup>", "<span class='flipped-v'>Ֆ</span><sup>3</sup>", "<span class='flipped-v'>Ֆ</span><sup>2<sup>2</sup></sup>"]
         ]],
         ["Alphabet",
         [
