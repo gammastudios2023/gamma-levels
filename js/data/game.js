@@ -34,7 +34,7 @@ const game = {
             level => level.gt(0) ? Math.pow(0.6, level.toNumber() - 1) * 30 : Infinity, null, {
                 getEffectDisplay: effectDisplayTemplates.automator()
             })),
-        autoAleph: new Automator("Auto Aleph", "Automatically Max All Aleph Upgrades", () =>
+        autoAleph: new Automator("Auto Caps", "Automatically Max All Cap Upgrades", () =>
         {
             game.alephLayer.maxAll();
         }, new DynamicLayerUpgrade(level => level + 3, () => null, () => "Decrease the Automator interval",
@@ -90,8 +90,8 @@ const game = {
             }),
     },
     achievements: [
-        new Achievement("You played!", "If you dont have this, you shouldn't exist", "&omega;", () => true),
-        new Achievement("Aleph-0", "Start gaining aleph", "&aleph;", () => game.alephLayer.isUnlocked()),
+        new Achievement("Upside-down m!", "Flipped the letter m upside down.", "ա", () => true),
+        new Achievement("PF!", "Unlock the level that looks like a F mixed with a P.", "բ", () => game.layers[1] && game.layers[1].timesReset > 0),
         new Achievement("Aleph-1", "Have 1e75 aleph", "&aleph;<sub>1</sub>", () => game.alephLayer.aleph.gte("1e75")),
         new Achievement("Aleph-2", "Have 1e200 aleph", "&aleph;<sub>2</sub>", () => game.alephLayer.aleph.gte("1e200")),
         new Achievement("Aleph-3", "Have 1.8e308 aleph", "&aleph;<sub>3</sub>", () => game.alephLayer.aleph.gte("1.8e308")),
