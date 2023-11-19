@@ -46,11 +46,11 @@ function tickGame(seconds)
             titleInfo = Utils.getMOTD();
             break;
         case 2:
-            titleInfo = "Layer "
+            titleInfo = "level "
             titleInfo += game.metaLayer.active ? functions.formatNumber(game.metaLayer.layer.add(1), 3, 0) : new Decimal(1).add(game.highestLayer);
             break;
     }
-    document.title = "ωEngine" + (game.settings.titleStyle !== 0 ? ":" : "") + " " + titleInfo;
+    document.title = "&Gamma;ՆՅՄՅՆՏ" + (game.settings.titleStyle !== 0 ? ":" : "") + " " + titleInfo;
 
     if(saveTimer > 30)
     {
@@ -74,7 +74,7 @@ function tickGame(seconds)
         {
             game.metaLayer.maxAll();
         }
-        if(game.settings.tab === "Aleph")
+        if(game.settings.tab === "Caps")
         {
             game.alephLayer.maxAll();
         }
@@ -225,7 +225,7 @@ onkeydown = e =>
         }
         if(lc === "t" && !e.ctrlKey && game.alephLayer.isUnlocked())
         {
-            game.settings.tab = "Aleph";
+            game.settings.tab = "Caps";
         }
         if(lc === "v" && !e.ctrlKey && game.highestLayer >= 2)
         {
