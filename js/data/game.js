@@ -120,7 +120,7 @@ const game = {
         showMinLayers: 5,
         showMaxLayers: 5,
         showLayerOrdinals: true,
-        layerTickSpeed: 100,
+        layerTickSpeed: 1e100,
         buyMaxAlways10: true,
         disableBuyMaxOnHighestLayer: false,
         resourceColors: true,
